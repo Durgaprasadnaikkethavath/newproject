@@ -5,6 +5,9 @@ const port = 3900;
 const path = require("path");
 const bcrypt = require("bcrypt");
 
+const cors = require("cors");
+app.use(cors());
+
 require("./db/conn");
 
 app.use(express.json());
