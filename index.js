@@ -21,13 +21,13 @@ const userCollection = require("./model/schema");
 //   res.send("<h1>Welcome to backend project</h1>");
 // });
 
-app.get("/", (req, res) => {
-  res.send("<h1>Welcome to JavaScript</h1>");
-});
-
 // app.get("/", (req, res) => {
-//   res.render("login");
+//   res.send("<h1>Welcome to JavaScript</h1>");
 // });
+
+app.get("/", (req, res) => {
+  res.render("login");
+});
 
 app.get("/signup", (req, res) => {
   res.render("signup");
